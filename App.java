@@ -11,9 +11,13 @@ public class App {
         scanner.useLocale(Locale.US);
         
         // Variables
-        int kdvAmount;
+        int mount;
         int kdvRatio;
+        int kdvAmount;
+        int kdvResult;
 
+
+        
 
 
 
