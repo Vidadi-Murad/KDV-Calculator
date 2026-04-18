@@ -11,13 +11,18 @@ public class App {
         scanner.useLocale(Locale.US);
         
         // Variables
-        int mount;
+        int amount;
         int kdvRatio;
         int kdvAmount;
         int kdvResult;
 
+        // Labels for get data from user
+        System.out.print("Enter Your Amount:");
+        amount = scanner.nextInt();
+        System.out.print("Enter the ratio of KDV:");
+        kdvRatio = scanner.nextInt();
 
-        
+       
 
 
 
