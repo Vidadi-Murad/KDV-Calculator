@@ -2,35 +2,41 @@
 
 // Library
 import java.util.Scanner;
-import java.util.Locale;
-
 
 public class App {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US);
         
         // Variables
-        int amount;
-        int kdvRatio;
-        int kdvAmount;
-        int kdvResult;
+        double amount;
+        double kdvRatio;
+        double kdvAmount;
+        double kdvResult;
 
         // Labels for get data from user
         System.out.print("Enter Your Amount:");
-        amount = scanner.nextInt();
+        amount = scanner.nextDouble();
         System.out.print("Enter the ratio of KDV:");
-        kdvRatio = scanner.nextInt();
+        kdvRatio = scanner.nextDouble();
 
        // Operations
-       kdvAmount = kdvRatio / 100;
+       kdvAmount = amount * (kdvRatio / 100);
        kdvResult = amount + kdvAmount;
 
+       // Opeations fot INT -> DOUBLE
+       //double newKdvAmount = (int) kdvAmount;
+       //double newKdvResult = (int) kdvResult;
+
        // Result
-
+ 
        System.out.println("---------------------------");
+       System.out.printf("The Amount: %.0f\n", amount);
+       System.out.printf("The KDV Rate: %.0f%%\n", kdvRatio);
+       System.out.printf("The KDV Amount: %.2f\n", kdvAmount);
        System.out.println("---------------------------");
 
+       System.out.printf("NET RESULT: %.2f\n", kdvResult);
+       System.out.println("---------------------------");
 
 
 
