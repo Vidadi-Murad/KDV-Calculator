@@ -22,7 +22,15 @@ public class App {
         System.out.print("Enter the ratio of KDV:");
         kdvRatio = scanner.nextInt();
 
-       
+       // Operations
+       kdvAmount = kdvRatio / 100;
+       kdvResult = amount + kdvAmount;
+
+       // Result
+
+       System.out.println("---------------------------");
+       System.out.println("---------------------------");
+
 
 
 
